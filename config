@@ -30,6 +30,9 @@ font pango:monospace 9
 # Set wallpaper
 exec --no-startup-id ~/.fehbg
 
+# and compton for compositing (double buffered etc.)
+exec --no-startup-id compton -b -d :0.@
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
