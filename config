@@ -199,3 +199,5 @@ bar {
 
 #Networkmanager applet
 exec --no-startup-id nm-applet
+#bluetooth applet
+exec --no-startup-id blueman-applet
