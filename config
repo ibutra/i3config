@@ -185,3 +185,10 @@ bar {
         status_command i3status -c ~/.config/i3/i3status.conf
         tray_output eDP1
 }
+
+##################
+#Autostart Section
+##################
+
+#Networkmanager applet
+exec --no-startup-id nm-applet
