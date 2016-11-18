@@ -52,9 +52,7 @@ bindsym $mod+space exec --no-startup-id i3-dmenu-desktop
 #Lock screen
 bindsym $mod+Home exec --no-startup-id i3lock -c 000000
 #automatic locking
-exec --no-startup-id xautolock -time 5 -locker 'i3lock -c 000000'
-#and sleeping
-exec --no-startup-id xautolock -time 10 -locker 'systemctl suspend'
+exec --no-startup-id "xautolock -time 10 -locker '~/.config/i3/sleep.fish' &"
 
 # change focus
 bindsym $mod+h focus left
