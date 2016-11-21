@@ -58,6 +58,11 @@ bindsym $mod+Home exec --no-startup-id i3lock -c 000000
 #automatic locking
 exec --no-startup-id "xautolock -time 10 -locker '~/.config/i3/sleep.fish' &"
 
+#Scratchpad
+bindsym $mod+Shift+s move scratchpad
+bindsym $mod+s scratchpad show
+bindsym $mod+Mod1+s floating toggle
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
