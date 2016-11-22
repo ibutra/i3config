@@ -54,7 +54,7 @@ set $rofiColors -color-window '#2d2d2d, #000000, #000000' -color-normal '#393939
 set $rofiKeys -kb-accept-entry Return,KP_Enter -kb-row-down Control+j,Down -kb-remove-to-eol Control+Shift+k -kb-row-up Control+k,Up
 
 bindsym $mod+d exec "rofi -show run $rofiKeys $rofiColors"
-bindsym $mod+space exec "rofi -combi-modi window,drun -show combi $rofiKeys $rofiColors"
+bindsym $mod+space exec "rofi -combi-modi window,drun,Workspace:~/.config/i3/rofi_workspace_switcher.sh -show combi $rofiKeys $rofiColors"
 
 #Lock screen
 bindsym $mod+End exec --no-startup-id i3lock -c 000000
