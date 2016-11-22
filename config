@@ -64,7 +64,7 @@ exec --no-startup-id "xautolock -time 10 -locker '~/.config/i3/sleep.fish' &"
 #Scratchpad
 bindsym $mod+Shift+s move scratchpad
 bindsym $mod+s scratchpad show
-bindsym $mod+Mod1+s floating toggle
+bindsym $mod+Control+s floating toggle
 
 # change focus
 bindsym $mod+h focus left
@@ -91,16 +91,16 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # move workspace to different screen
-bindsym $mod+Mod1+h move workspace to output left
-bindsym $mod+Mod1+j move workspace to output down
-bindsym $mod+Mod1+k move workspace to output up
-bindsym $mod+Mod1+l move workspace to output right
+bindsym $mod+Control+h move workspace to output left
+bindsym $mod+Control+j move workspace to output down
+bindsym $mod+Control+k move workspace to output up
+bindsym $mod+Control+l move workspace to output right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Mod1+Left move workspace to output left
-bindsym $mod+Mod1+Down move workspace to output down
-bindsym $mod+Mod1+Up move workspace to output up
-bindsym $mod+Mod1+Right move workspace to output right
+bindsym $mod+Control+Left move workspace to output left
+bindsym $mod+Control+Down move workspace to output down
+bindsym $mod+Control+Up move workspace to output up
+bindsym $mod+Control+Right move workspace to output right
 
 
 # split in horizontal orientation
