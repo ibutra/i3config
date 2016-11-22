@@ -40,6 +40,9 @@ floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
 bindsym F12 exec i3-sensible-terminal
 
+# rename workspace
+bindsym $mod+r exec i3-input -F 'rename workspace to "%s"' -P 'New name for this workspace: '
+
 # kill focused window
 bindsym $mod+Shift+q kill
 bindsym $mod+q kill
