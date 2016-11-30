@@ -219,3 +219,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 #turn numlock on
 exec --no-startup-id numlockx on
+
+
+# Start galculator floating
+for_window [class="Galculator"] floating enable
