@@ -38,7 +38,6 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
-bindsym F12 exec i3-sensible-terminal
 
 # rename workspace
 bindsym $mod+r exec i3-input -F 'rename workspace to "%s"' -P 'New name for this workspace: '
@@ -66,8 +65,8 @@ exec --no-startup-id "xautolock -time 10 -locker 'systemctl sleep' &"
 
 #Scratchpad
 bindsym $mod+Shift+s move scratchpad
-bindsym $mod+s scratchpad show
-bindsym $mod+Control+s floating toggle
+bindsym F12 scratchpad show
+bindsym $mod+s floating toggle
 
 # change focus
 bindsym $mod+h focus left
