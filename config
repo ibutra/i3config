@@ -244,6 +244,6 @@ exec --no-startup-id blueman-applet &
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 #Outlook VM
-exec --no-startup-id VirtualBox --comment "Outlook" --startvm "1d453775-9342-4aca-b6dc-3bffe04f81ba" &
+#exec --no-startup-id VirtualBox --comment "Outlook" --startvm "1d453775-9342-4aca-b6dc-3bffe04f81ba" &
 #KeepassXC
 exec --no-startup-id keepassxc &
