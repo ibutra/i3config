@@ -208,6 +208,13 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
         #tray_output eDP1
 #}
 
+####################
+#Autoplacing Section
+####################
+
+assign [class="VirtualBox"] 10
+assign [class="keepassxc"] 9
+
 ##################
 #Autostart Section
 ##################
@@ -236,3 +243,7 @@ exec --no-startup-id blueman-applet &
 #polkit
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
+#Outlook VM
+exec --no-startup-id VirtualBox --comment "Outlook" --startvm "1d453775-9342-4aca-b6dc-3bffe04f81ba" &
+#KeepassXC
+exec --no-startup-id keepassxc &
