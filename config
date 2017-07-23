@@ -59,7 +59,7 @@ bindsym $mod+d exec "rofi -show run $rofiKeys $rofiColors"
 bindsym $mod+space exec "rofi -combi-modi window,drun,Workspace:~/.config/i3/rofi_workspace_switcher.sh -show combi $rofiKeys $rofiColors"
 
 #Lock screen
-bindsym $mod+End exec --no-startup-id i3lock -c 000000
+bindsym $mod+End exec --no-startup-id light-locker-command -l
 #automatic locking
 exec --no-startup-id "xautolock -time 10 -locker 'systemctl sleep' &"
 
@@ -242,6 +242,8 @@ exec --no-startup-id nm-applet &
 exec --no-startup-id blueman-applet &
 #polkit
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+#lightlocker
+exec --no-startup-id light-locker &
 
 #Outlook VM
 #exec --no-startup-id VirtualBox --comment "Outlook" --startvm "1d453775-9342-4aca-b6dc-3bffe04f81ba" &
