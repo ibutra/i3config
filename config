@@ -27,9 +27,6 @@ font pango:monospace 9
 # font, it doesn’t scale on retina/hidpi displays.
 
 
-# Set wallpaper
-#exec --no-startup-id ~/.fehbg
-
 # and compton for compositing (double buffered etc.)
 #exec --no-startup-id compton -b -d :0.@
 
@@ -225,8 +222,6 @@ assign [class="Spotify"] 8
 
 #screen compositor
 exec --no-startup-id compton &
-#set background
-exec --no-startup-id nitrogen --restore &
 #xfce Settings deamon
 exec --no-startup-id xfsettingsd --sm-client-disable &
 #Volume manager of xfce
@@ -253,3 +248,5 @@ exec --no-startup-id light-locker &
 #exec --no-startup-id VirtualBox --comment "Outlook" --startvm "1d453775-9342-4aca-b6dc-3bffe04f81ba" &
 #KeepassXC
 exec --no-startup-id keepassxc &
+#set background
+exec --no-startup-id sleep 2; feh --randomize --bg-fill ~/Pictures/wallpaper/* &
