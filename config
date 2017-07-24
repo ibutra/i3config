@@ -214,6 +214,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 assign [class="VirtualBox"] 10
 assign [class="keepassxc" tiling] 9
+assign [class="Spotify"] 8
 
 ##################
 #Autostart Section
