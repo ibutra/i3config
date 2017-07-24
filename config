@@ -190,9 +190,9 @@ bindsym $mod+Shift+0 move container to workspace number 10
 #bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
 
 # Media player controls
-#bindsym XF86AudioPlay exec playerctl play-pause
-#bindsym XF86AudioNext exec playerctl next
-#bindsym XF86AudioPrev exec playerctl previous
+bindsym $mod+F9 exec playerctl play-pause
+bindsym $mod+F11 exec playerctl next
+bindsym $mod+F10 exec playerctl previous
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
