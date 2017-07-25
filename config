@@ -221,8 +221,10 @@ workspace 10 output DP2-3
 ####################
 
 assign [class="Thunderbird"] 10
-for_window [class="Spotify"] move to workspace 8 #assign does not work
-for_window [title="Database.kdbx"] move to workspace 9 #only want the main window there so no assign
+#assign does not work for spotify
+for_window [class="Spotify"] move to workspace 8
+ #only want the main window there so no assign for keepassxc
+for_window [title="Database.kdbx"] move to workspace 9
 
 ##################
 #Autostart Section
