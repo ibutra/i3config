@@ -208,13 +208,21 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
         #tray_output eDP1
 #}
 
+##################
+#Workspace Outputs
+##################
+
+workspace 8 output DP2-3
+workspace 9 output DP2-3
+workspace 10 output DP2-3
+
 ####################
 #Autoplacing Section
 ####################
 
-assign [class="VirtualBox"] 10
-assign [class="keepassxc" tiling] 9
-assign [class="Spotify"] 8
+assign [class="Thunderbird"] 10
+for_window [class="Spotify"] move to workspace 8 #assign does not work
+for_window [title="Database.kdbx"] move to workspace 9 #only want the main window there so no assign
 
 ##################
 #Autostart Section
@@ -243,10 +251,12 @@ exec --no-startup-id blueman-applet &
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #lightlocker
 exec --no-startup-id light-locker &
-
-#Outlook VM
-#exec --no-startup-id VirtualBox --comment "Outlook" --startvm "1d453775-9342-4aca-b6dc-3bffe04f81ba" &
-#KeepassXC
-exec --no-startup-id keepassxc &
 #set background
 exec --no-startup-id sleep 2; feh --randomize --bg-fill ~/Pictures/wallpaper/* &
+
+#KeepassXC
+exec keepassxc
+#DavMail
+exec --no-startup-id davmail
+#thunderbird
+exec thunderbird
